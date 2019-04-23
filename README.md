@@ -27,12 +27,15 @@ Each experiment contains (1) preprocess step, (2) training step and optionally (
  However, please note that there are still many options in processing the dataset such as
      * How to assign global ordering of nodes?
      * How K-Nearest Neighbors are chosen for each node?
+
  ... etc. For the details, please see the comments in [preproces-dataset.py](preproces-dataset.py).
  As our main focus is at detecting critical structures, We just choosed an okay setting to get comparable performance.
+
  2. Execute `python run-ego-cnn.py -n [dataset-name] -g [gpu-id] -f [gpu-fraction] -k [#neighbor of Ego-Convolution] -m [model-type]` with the below settings for each task:
   * Graph Classification Experiments are all with `k=17` (self + 16 nearest neighbors) and `model-type='6L'` (means 1 Patchy-San + 5 Ego-Convolution Layers)
   * Scale-Free Experiments use `model-type='6L_SF` (with scale-free regularizer) and `model-type='2L'` (base model)
   * Visualization Experiments of synthetic compound datasets: `k=4` and `model-type='6L'`
+
  3. The trained Ego-CNN can be visualized by many existing CNN techniques. Below are some examples:
    * Attention Layer + Transposed Convolution: run `python plot-critical-structure-Attention.py -n [dataset-name] -g [gpu-id] -f [gpu-fraction] -k [#neighbor of Ego-Convolution] -t [threshold to select important neighborhoods]`. This is the setting to plot the figures in our paper.
    * Grad-CAM[ICCV'17] + Transposed Convolution: run `python plot-critical-structure-GradCAM.py -n [dataset-name] -g [gpu-id] -f [gpu-fraction] -k [#neighbor of Ego-Convolution] -t [threshold to select important neighborhoods]`.
