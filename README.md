@@ -1,5 +1,6 @@
 # Ego-CNN
 This is the repo for "Distributed, Egocentric Representations of Graphs for Detecting Critical Structures", Ruo-Chun Tzeng, Shan-Hung Wu, In Proceedings of ICML 2019.
+ * [paper link](http://proceedings.mlr.press/v97/tzeng19a.html), [slides](https://drive.google.com/open?id=1ypDgm_EVsJCjC0c5Rl7dBvzQSRjSbkXZ)
 
 In the paper, we proposed Ego-Convolution layer, which is a generalization of traditional Convolutional layer to graph, aiming to detect precise graph patterns up to global-scale in an efficient manner.
 
