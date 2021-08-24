@@ -1,0 +1,15 @@
+# YAML 1.2
+---
+abstract: "This is the repository for Distributed, Egocentric Representations of Graphs for Detecting Critical Structures (ICML 2019)."
+authors: 
+  -
+    family-names: Tzeng
+    given-names: "Ruo-Chun"
+    orcid: "https://orcid.org/0000-0002-4222-274X"
+cff-version: "1.1.0"
+date-released: 2019-06-22
+license: MIT
+message: "If you use this software, please cite it using these metadata."
+repository-code: "https://github.com/rctzeng/EgoCNN"
+title: "Ego-CNN: Distributed, Egocentric Representations of Graphs for Detecting Critical Structures"
+...
